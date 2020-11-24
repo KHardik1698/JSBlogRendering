@@ -8,9 +8,6 @@ window.onload = () => {
   const blogDiv = document.getElementById("root");
   const blogImageDiv = blogImage(blogs[0].imageUrl);
   blogDiv.appendChild(blogImageDiv);
-  // blogDiv.appendChild(
-  //   blogImage("https://cdn.fs.teachablecdn.com/JOTwcbUxTSejTurJ33QR")
-  // );
   const blogContentDiv = blogContent(blogs[0].title, blogs[0].content);
   blogDiv.appendChild(blogContentDiv);
   const listDiv = document.getElementById("related-links");

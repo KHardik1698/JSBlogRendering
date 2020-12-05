@@ -1,13 +1,15 @@
+import { renderNewBlog } from "../helper/renderNewBlog.js";
+
 export const relatedLinks = (links) => {
   const list = document.createElement("ul");
   list.classList.add("related-links-list");
   links.forEach((e, i) => {
     const listItem = document.createElement("li");
-    const listItemLink = document.createElement("a");
-    listItemLink.id = links[i].id;
-    listItemLink.innerHTML = links[i].title;
-    listItemLink.href = "";
-    listItem.appendChild(listItemLink);
+    listItem.id = links[i].id;
+    listItem.innerHTML = links[i].title;
+    listItem.addEventListener("click", () => {
+      renderNewBlog(listItem.id);
+    });
     list.appendChild(listItem);
   });
   return list;

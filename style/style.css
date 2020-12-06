@@ -1,5 +1,6 @@
 html {
   font-family: "Nunito", sans-serif;
+  background-color: black;
 }
 
 html,
@@ -20,24 +21,33 @@ body {
   grid-row: 1/2;
   grid-column: 1/13;
   margin: 5vh auto;
+  background-color: white;
 }
 
 #section-container {
   grid-row: 2/5;
   grid-column: 1/10;
-  margin: 5vh auto;
+  margin: 5vh 2vh 0px auto;
+  background-color: white;
 }
 
 #aside-container {
   grid-row: 2/5;
-  grid-column: 11/13;
-  margin: 5vh auto;
+  grid-column: 10/13;
+  margin: 5vh auto 0px 2vh;
+  background-color: white;
 }
 
 #footer-container {
   grid-row: 6/7;
   grid-column: 1/13;
   margin: 5vh auto;
+  background-color: white;
+}
+
+#root {
+  padding: 5vh;
+  text-align: justify;
 }
 
 .blog-image {
@@ -49,6 +59,7 @@ body {
 .blog-image img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .blog-content-div h1 {
@@ -58,40 +69,56 @@ body {
   text-align: justify;
 }
 
+#related-links {
+  margin: 5vh;
+}
+
 #related-links ul {
   padding: 0px;
 }
 
 #related-links li {
-  list-style-position: inside;
   list-style: decimal-leading-zero;
+  list-style-position: inside;
 }
 
 .logo {
-  width: 20%;
-  height: 20%;
+  width: 25%;
+  height: auto;
+  margin: 1vh;
 }
 
 .logo-image {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .header-container-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.header-container-div img {
-  display: inline;
+  align-items: center;
 }
 
 .header-container-div li {
   list-style: none;
+  margin: 5vh;
 }
 
 .header-container-div li a {
   text-decoration: none;
   color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+.footer-container-div {
+  text-align: center;
+}
+
+.footer-container-div i {
+  padding: 5vh;
 }

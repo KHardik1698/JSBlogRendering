@@ -2,9 +2,15 @@ import { findBlogById } from "./findBlogById.js";
 import { blogImage } from "../components/blogImage.js";
 import { blogContent } from "../components/blogContent.js";
 import { relatedLinks } from "../components/relatedLinks.js";
+import { headerContent } from "../components/headerContent.js";
 
 export const renderNewBlog = (blogId) => {
   const blogObject = findBlogById(blogId);
+  const headerDiv = document.getElementById("header-container");
+  headerDiv.innerHTML = "";
+  headerDiv.appendChild(
+    headerContent(blogObject[0].title, blogObject[0].imageUrl)
+  );
   const blogDiv = document.getElementById("root");
   blogDiv.innerHTML = "";
   const blogImageDiv = blogImage(blogObject[0].imageUrl);

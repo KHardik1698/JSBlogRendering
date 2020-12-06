@@ -1,3 +1,13 @@
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 #div-container {
   display: grid;
   width: 90%;
@@ -9,26 +19,30 @@
 #header-container {
   grid-row: 1/2;
   grid-column: 1/13;
+  margin: 5vh auto;
 }
 
 #section-container {
   grid-row: 2/5;
   grid-column: 1/10;
+  margin: 5vh auto;
 }
 
 #aside-container {
   grid-row: 2/5;
-  grid-column: 10/13;
+  grid-column: 11/13;
+  margin: 5vh auto;
 }
 
 #footer-container {
   grid-row: 6/7;
   grid-column: 1/13;
+  margin: 5vh auto;
 }
 
 .blog-image {
-  width: 50%;
-  height: 50vh;
+  width: 75%;
+  height: auto;
   margin: 10px auto;
 }
 
@@ -42,4 +56,42 @@
 }
 .blog-content-div p {
   text-align: justify;
+}
+
+#related-links ul {
+  padding: 0px;
+}
+
+#related-links li {
+  list-style-position: inside;
+  list-style: decimal-leading-zero;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+}
+
+.logo-image {
+  width: 90%;
+  height: 90%;
+}
+
+.header-container-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-container-div img {
+  display: inline;
+}
+
+.header-container-div li {
+  list-style: none;
+}
+
+.header-container-div li a {
+  text-decoration: none;
+  color: black;
 }

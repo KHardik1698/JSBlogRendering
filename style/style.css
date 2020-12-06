@@ -1,3 +1,31 @@
+#div-container {
+  display: grid;
+  width: 90%;
+  height: auto;
+  margin: 5vh auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#header-container {
+  grid-row: 1/2;
+  grid-column: 1/13;
+}
+
+#section-container {
+  grid-row: 2/5;
+  grid-column: 1/10;
+}
+
+#aside-container {
+  grid-row: 3/4;
+  grid-column: 10/13;
+}
+
+#footer-container {
+  grid-row: 6/7;
+  grid-column: 1/13;
+}
+
 .blog-image {
   width: 50%;
   height: 50vh;

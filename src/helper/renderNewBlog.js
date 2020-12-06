@@ -16,6 +16,7 @@ export const renderNewBlog = (blogId) => {
   blogDiv.appendChild(blogContentDiv);
   const listDiv = document.getElementById("related-links");
   listDiv.innerHTML = "";
+  listDiv.innerHTML = `<h1>Related Links</h1>`;
   const relatedLinksList = relatedLinks(blogObject[0].links);
   listDiv.appendChild(relatedLinksList);
 };

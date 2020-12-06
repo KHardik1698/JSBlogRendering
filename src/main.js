@@ -10,6 +10,7 @@ window.onload = () => {
   const blogContentDiv = blogContent(blogData[0].title, blogData[0].content);
   blogDiv.appendChild(blogContentDiv);
   const listDiv = document.getElementById("related-links");
+  listDiv.innerHTML = `<h1>Related Links</h1>`;
   const relatedLinksList = relatedLinks(blogData[0].links);
   listDiv.appendChild(relatedLinksList);
 };

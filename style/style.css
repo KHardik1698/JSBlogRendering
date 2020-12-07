@@ -63,9 +63,11 @@ body {
 }
 
 .blog-content-div h1 {
+  font-size: 4vh;
   text-align: center;
 }
 .blog-content-div p {
+  font-size: 2.5vh;
   text-align: justify;
 }
 
@@ -78,6 +80,7 @@ body {
 }
 
 #related-links li {
+  font-size: 2.5vh;
   list-style: decimal-leading-zero;
   list-style-position: inside;
 }
@@ -101,12 +104,21 @@ body {
   align-items: center;
 }
 
+.header-container-div h1 {
+  font-size: 2vw;
+}
+
+.header-container-div ul {
+  padding: 0px;
+}
+
 .header-container-div li {
   list-style: none;
-  margin: 5vh;
+  margin: 5vh 5vw;
 }
 
 .header-container-div li a {
+  font-size: 1.5vw;
   text-decoration: none;
   color: black;
 }
@@ -116,9 +128,113 @@ body {
 }
 
 .footer-container-div {
+  font-size: 2.5vh;
   text-align: center;
 }
 
 .footer-container-div i {
   padding: 5vh;
+}
+
+@media (max-width: 1000px) {
+  #header-container,
+  #footer-container {
+    margin: 1vh auto;
+  }
+  #section-container {
+    margin: 1vh 1vh 1vh 0px;
+  }
+  #aside-container {
+    margin: 1vh 0px 1vh 1vh;
+  }
+  .logo {
+    width: 20%;
+  }
+  .header-container-div h1 {
+    font-size: 2.5vw;
+  }
+  .header-container-div li {
+    margin: 2vh 5vw;
+  }
+  .header-container-div li a {
+    font-size: 1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-container-div li {
+    margin: 0px 2vw;
+  }
+  #root {
+    padding: 1vh;
+  }
+  .blog-content-div h1,
+  .blog-content-div p {
+    font-size: 2vh;
+  }
+  #related-links h1,
+  #related-links li {
+    font-size: 2vh;
+  }
+}
+
+@media (max-width: 600px) {
+  #section-container {
+    grid-row: 2/4;
+    grid-column: 1/13;
+    margin: 1vh auto;
+  }
+  #aside-container {
+    grid-row: 4/5;
+    grid-column: 1/13;
+    margin: 1vh 0px;
+  }
+  .navigation ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    font-size: 2vw;
+    margin: 3vw;
+  }
+  .header-container-div ul {
+    margin: 0px;
+  }
+  .nav-item {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer-container-div {
+    font-size: 2vh;
+  }
+}
+
+@media (max-width: 200px) {
+  .blog-image {
+    width: 100%;
+  }
+  .blog-content-div h1,
+  .blog-content-div p {
+    font-size: 4vw;
+  }
+  #related-links {
+    margin: 0px;
+    text-align: center;
+  }
+  #related-links h1,
+  #related-links li {
+    font-size: 4vw;
+  }
+  .related-links-list {
+    margin: 1vh;
+  }
+  #footer-container {
+    margin: 0px;
+  }
+  .footer-container-div {
+    font-size: 4vw;
+  }
+  .footer-container-div i {
+    padding: 5vw;
+  }
 }

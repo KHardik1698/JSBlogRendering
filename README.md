@@ -25,7 +25,7 @@ It will return the Header Markup inside a Div.
 # Footer Content Component:
 
 The Footer Content Component contains the Footer Markup in the form of Template Strings.\
-It will return the Header Markup inside a Div.
+It will return the Footer Markup inside a Div.
 
 # Blog Image Component:
 

@@ -60,5 +60,5 @@ It will then return the Blog Object which matches the Id.
 
 # Demo:
 
-Live Demo of the Resume Web Page can be found here:\
+Live Demo of the JavaScript Blog Rendering can be found here:\
 https://khardik1698.github.io/JSBlogRendering/
